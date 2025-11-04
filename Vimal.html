@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vimalraam S V - Portfolio</title>
+<style>
+    /* General Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to bottom right, #e3f2fd, #fce4ec);
+        color: #222;
+    }
+
+    /* Header */
+    header {
+        background: linear-gradient(135deg, #007bff, #00bcd4);
+        color: white;
+        text-align: center;
+        padding: 70px 20px;
+        background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    header::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.5);
+    }
+    header h1, header p {
+        position: relative;
+        z-index: 1;
+    }
+    header h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+    header p {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    /* Container */
+    .container {
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    /* Section Style */
+    section {
+        background-color: white;
+        margin-bottom: 40px;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+        color: #007bff;
+        border-left: 5px solid #00bcd4;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+    }
+
+    /* Skills */
+    ul {
+        list-style-type: none;
+        padding-left: 10px;
+    }
+    li {
+        background: linear-gradient(90deg, #007bff, #00bcd4);
+        color: white;
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 20px;
+        margin: 6px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: transform 0.2s;
+    }
+    li:hover {
+        transform: scale(1.1);
+    }
+
+    /* Projects */
+    .project {
+        background-color: #f1f8ff;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 10px 0;
+        border-left: 5px solid #007bff;
+    }
+
+    /* Education */
+    .education {
+        line-height: 1.6;
+    }
+
+    /* Hobbies */
+    .hobbies span {
+        display: inline-block;
+        background: #ff8a80;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
+    /* Contact Section */
+    #contact a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    #contact a:hover {
+        text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        background: linear-gradient(135deg, #007bff, #00bcd4);
+        color: white;
+        padding: 25px;
+        margin-top: 50px;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    section {
+        animation: fadeIn 0.8s ease-in-out;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Vimalraam S V</h1>
+        <p>2nd Year Civil Engineering Student | Innovator | Designer</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Vimalraam S V</strong> — a passionate Civil Engineering student with a creative mindset and strong interest in design, technology, and innovation. I love blending technical engineering skills with creative digital solutions. My goal is to design sustainable and efficient structures that make a difference in the world.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>AutoCAD</li>
+                <li>Revit</li>
+                <li>STAAD Pro</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Smart Drainage System Design</h3>
+                <p>Developed an innovative model to reduce waterlogging in urban areas using a smart drainage sensor-based approach.</p>
+            </div>
+            <div class="project">
+                <h3>Mini Portfolio Website</h3>
+                <p>Created a personal responsive portfolio website using HTML, CSS, and animations to showcase my skills and projects.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <p><strong>B.E. Civil Engineering</strong> - Government College of Engineering, Salem</p>
+                <p><strong>Year:</strong> 2nd Year (2025)</p>
+                <p><strong>CGPA:</strong> 8.5 (Current)</p>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <div class="hobbies">
+                <span>3D Design</span>
+                <span>Sketching</span>
+                <span>Programming</span>
+                <span>Photography</span>
+                <span>Travel</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>📞 Mobile: <strong>+91 8760375645</strong></p>
+            <p>📧 Email: <a href="mailto:vimalraam175@gmail.com">vimalraam175@gmail.com</a></p>
+            <p>🌐 LinkedIn: <a href="https://www.linkedin.com/in/vimalraam-s-v-32a9aa278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/Vimalraam S V</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vimalraam S V. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
